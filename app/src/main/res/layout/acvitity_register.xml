@@ -18,6 +18,7 @@
     android:textColorHint="#FFFFFF"
 
     />
+
     <EditText
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
