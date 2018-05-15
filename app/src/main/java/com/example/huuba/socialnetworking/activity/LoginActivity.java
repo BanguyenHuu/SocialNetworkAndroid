@@ -74,14 +74,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 LoginResponse loginResponse=response.body();
-               //Log.d("tesst",String.valueOf(loginResponse.getId()));
-               String id=loginResponse.getToken();
-                //Log.d("tesst",loginResponse.getToken());
-            }
+                if( loginResponse != null &&
+                        loginResponse.getStatusCode() == 0) {
+                    Intent intent = new Intent();
+                    intent.setClass(LoginActivity.this,
+                            MainActivity.class);
+                    intent.putExtra("TOKEN", loginResponse.getData().getToken());
+                    startActivity(intent);
+                    finish();
+                }
+                else {
+                    Log.d("tesst","user name or passwored incorrect");
+
+                }
+        }
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-                Log.d("tesst",t.getMessage());
             }
         });
 

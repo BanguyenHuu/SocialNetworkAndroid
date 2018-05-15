@@ -1,32 +1,45 @@
 package com.example.huuba.socialnetworking.model.response;
 
 public class LoginResponse {
+    private int statusCode;
+    private String msg;
 
-    int id;
-    String token;
+    private DataLogin data;
 
-
-    public LoginResponse(int id, String token) {
-        this.id = id;
-        this.token = token;
+    public int getStatusCode() {
+        return statusCode;
     }
 
-    public LoginResponse() {
+    public void setStatusCode(int statusCode) {
+        this.statusCode = statusCode;
     }
 
-    public int getId() {
-        return id;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public String getToken() {
-        return token;
+    public DataLogin getData() {
+        return data;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setData(DataLogin data) {
+        this.data = data;
     }
+
+    public static final class DataLogin{
+        private String token;
+
+        public String getToken() {
+            return token;
+        }
+
+        public void setToken(String token) {
+            this.token = token;
+        }
+    }
+
 }
