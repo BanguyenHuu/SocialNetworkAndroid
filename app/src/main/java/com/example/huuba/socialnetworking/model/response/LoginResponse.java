@@ -31,6 +31,7 @@ public class LoginResponse {
     }
 
     public static final class DataLogin{
+        private int id;
         private String token;
 
         public String getToken() {
@@ -39,6 +40,14 @@ public class LoginResponse {
 
         public void setToken(String token) {
             this.token = token;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
         }
     }
 
