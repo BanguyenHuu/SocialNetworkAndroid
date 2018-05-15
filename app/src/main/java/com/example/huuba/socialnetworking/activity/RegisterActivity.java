@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,7 +12,7 @@ import android.widget.Toast;
 import com.example.huuba.socialnetworking.Constants;
 import com.example.huuba.socialnetworking.R;
 import com.example.huuba.socialnetworking.inter.Register;
-import com.example.huuba.socialnetworking.model.RegisterRequest;
+import com.example.huuba.socialnetworking.model.request.RegisterRequest;
 
 import okhttp3.internal.Util;
 import retrofit2.Call;

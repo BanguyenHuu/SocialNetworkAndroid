@@ -1,6 +1,6 @@
 package com.example.huuba.socialnetworking.inter;
 
-import com.example.huuba.socialnetworking.model.RegisterRequest;
+import com.example.huuba.socialnetworking.model.request.RegisterRequest;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

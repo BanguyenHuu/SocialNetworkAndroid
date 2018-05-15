@@ -1,4 +1,4 @@
-package com.example.huuba.socialnetworking.model;
+package com.example.huuba.socialnetworking.model.request;
 
 public class RegisterRequest {
         private String email;
