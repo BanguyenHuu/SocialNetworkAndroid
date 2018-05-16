@@ -1,9 +1,9 @@
 package com.example.huuba.socialnetworking.activity;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
 
-import com.example.huuba.socialnetworking.R;
+        import com.example.huuba.socialnetworking.R;
 
 public class MainActivity extends AppCompatActivity {
 
